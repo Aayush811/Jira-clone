@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    height: 12%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.856);
+    /* box-shadow: blue 5px 5px 5px 5px; */
+    display: flex;
+}
+
+.grid {
+    height: 88%;
+    width: 100vw;
+    background-color: #868686;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    /* padding-bottom: 1.5rem; */
+    overflow: auto;
+
+}
+
+.colors, .action  {
+    background-color: #444444;
+    height: 75%;
+    width: 15rem;
+    margin-left: 5rem;
+    margin-top: 1.5vh;
+    border-radius: 3px;
+    display: flex;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.action {
+    height: 75%;
+    width: 8rem;
+    margin-left: 5rem;
+    margin-top: 1.5vh;
+    display: flex;
+    /* border: 1px black solid; */
+}
+
+.filters {
+    height: 100%;
+    width: 25%;
+}
+
+.filters:hover {
+    background-color: #393939;
+    border: 1px solid black;
+    /* box-shadow: wheat 0px 0px 5px; */
+}
+
+.add, .delete {
+    height: 100%;
+    width: 100%;
+    /* border: 1px black solid; */
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 200%;
+    padding: auto;
+    padding-top: 5px;
+}
+
+.add {
+    /* padding-top: 4px; */
+    padding-top: 9px;
+}
+
+/* .addDiv{
+    height: 100%;
+    width: 50%;
+}
+
+.deleteDiv{
+    height: 100%;
+    width: 50%;
+}
+
+.divAdd{
+    margin-top: 3.75rem;
+    background-color: green;
+    width: 50%;
+    height: 50%;
+} */
+
+.add:hover, .delete:hover {
+    background-color: #393939;
+    /* border: 1px solid black; */
+    box-shadow: black 0px 0px 5px;
+}
+
+.delete-highlight{
+    background-color: #393939;
+    border: 1px solid black;
+    box-shadow: black 0px 0px 5px;
+}
+
+.black-btn, .blue-btn, .pink-btn, .green-btn {
+    background-color: rgb(102, 11, 11);
+    height: 50%;
+    width: 50%;
+    border-radius: 2px;
+    margin-left: 25%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    margin-right: 25%;
+}
+
+.modal{
+    /* border: 1px solid; */
+    height: 14rem;
+    width: 26rem;
+    display: flex;
+    /* position: fixed;
+    top: calc((100vh - 14rem) / 2);
+    left: calc((100vw - 26rem) / 2); */
+    box-shadow: #333333 1px 5px 10px 6px ;
+    border-radius: 10px;
+}
+
+.text{
+    /* border: #333333 1px solid; */
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 20px;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* .select{
+    /* border: black 1px solid; */
+    /* height: 100%;
+    width: 30%;
+    background-color: #333333;
+}
+
+.selectFilter{
+    /* border: black 1px solid; */
+    /* height: 80%;
+    width: 55%;
+    margin-top: 1.4rem;
+    margin-left: 1.755rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: flex; */
+/* } */ 
+
+/* .selectFilter:hover{
+    opacity: 1;
+} */
+
+
+
+.black-filter:hover{
+    opacity: 1;
+}
+.pink-filter:hover , .blue-filter:hover , .green-filter:hover , .black-filter:hover{
+    opacity: 1;
+}
+
+.list{
+    /* border: #333333 1px solid; */
+    height: 9.5rem;
+    width: 12rem;
+    background-color: beige;
+    /* position: fixed; */
+    /* left: 2rem;
+    top: 9rem; */
+    margin: 1.5rem;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.border{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: black;
+    width: 100%;
+    height: .7rem;
+}
+
+.id{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(138, 138, 111);
+    color: black;
+    width: 100%;
+    height: 1.6rem;
+    padding: 3px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.text-area{
+    width: 100%;
+    /* background-color: green; */
+    height: 7.2rem;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    overflow: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-container{
+    position: fixed;
+    top: calc((100vh - 14rem) / 2);
+    left: calc((100vw - 26rem) / 2);
+    /* border: black 2px solid; */
+    /* box-shadow: 0px 0px 100px 5px; */
+}
+
+.function-selector{
+    margin-top: 10px;
+    /* background-color: aquamarine; */
+    width: 26rem;
+    height: 3rem;
+    display: flex;
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 0px 100px 5px; */
+}
+
+.select{
+    width: 80%;
+    height: 100%;
+    /* background-color: #333333; */
+    margin-right: 2.5px;
+    /* margin-left: 2.5px; */
+    border-radius: 5px;
+}
+
+.addBtn{
+    /* margin-right: 2.5px; */
+    margin-left: 2.5px;
+    width: 20%;
+    height: 100%;
+    background-color: #0a0333;
+    border-radius: 5px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    font-size: 1.5rem;
+    padding-top: .75rem;
+}
+
+.addBtn:hover{
+    border: black 1px solid;
+    box-shadow: 0px 0px 5px;
+}
+
+.selectFilter{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* justify-content: space-evenly; */
+}
+
+.pink-filter , .blue-filter , .green-filter , .black-filter{
+    /* border: 1px black solid; */
+    margin-top: .3rem;
+    height: 80%;
+    width: 20%;
+    border-radius: 3px;
+    opacity: .8; 
+    margin-right: 10px;
+    box-shadow: 3px 3px 5px 2px;
+    /* margin-top: 8px; */
+    /* margin-bottom: 8px; */
+}
+
+.black-filter{
+    background-color: rgb(102, 11, 11);
+}
+
+.pink-btn , .pink-filter {
+    background-color: rgb(167, 12, 64);
+}
+
+.green-btn , .green-filter {
+    background-color: rgb(6, 58, 6);
+}
+
+.blue-btn , .blue-filter {
+    background-color: rgb(5, 33, 75);
+}
+
+.pink-filter{
+    margin-left: 0;
+}
+
+.highlight-filters{
+    border: 3px solid black;
+    box-shadow:  3px 3px 5px 1px;
+    opacity: 1;
+}
+
+.fa .fa-trash-o{
+    font: size 10rem;
+    position: relative;
+    right: 0;
+    color:black;
+}
+
+.highlight-filter{
+    border: 1px solid black;
+    background-color: #393939;
+    box-shadow:  0px 0px 5px 1px;
+    opacity: 1;
+}
+
